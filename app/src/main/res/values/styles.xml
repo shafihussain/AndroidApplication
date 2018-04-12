@@ -1,0 +1,132 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Using Linear Layout for TextViews-->
+    <style name="Main">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/main</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="main">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/btnPages</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Button style for the MainActivity / activity_main.xml-->
+    <style name="Buttons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/btnMain</item>
+        <item name="android:textColor">@color/main</item>
+    </style>
+
+    <!-- Button style for all the pages-->
+    <style name="BtnPages">
+        <item name="android:background">@color/buttons</item>
+        <item name="android:textColor">@color/btnPages</item>
+    </style>
+
+    <!--Style for Table Head / Daycare Schedule-->
+    <style name="TableHead">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/tbText</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/head_data</item>
+    </style>
+
+    <!--Style for Table Data/ Daycare Schedule-->
+    <style name="TableData">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/main</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/back_data</item>
+    </style>
+
+    <!--Style for Table Row/ Daycare Schedule-->
+    <style name="TableRow">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!--Style for TextView / activity_login.xml -->
+    <style name="loginText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tbText</item>
+    </style>
+
+    <!--Style for EditText / activity_login.xml -->
+    <style name="loginEdit">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <!--Style for Buttons / activity_temp_metric_options.xml -->
+    <style name="btnTMOptions">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">100dp</item>
+        <item name="android:background">@color/buttons</item>
+        <item name="android:textColor">@color/btnPages</item>
+    </style>
+
+    <!-- Temperature Convert Buttons / activity_temperature_convert-->
+    <style name="btnConvert">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/buttons</item>
+        <item name="android:textColor">@color/btnPages</item>
+
+    </style>
+
+    <!-- Temperature Convert TextView / activity_temperature_convert-->
+    <style name="txtViews">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+    </style>
+
+    <!-- Temperature Convert TextView / activity_temperature_convert-->
+    <style name="editTxt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">6</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+    <style name="AppThemeToolBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#25252F</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">#25252F</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">#FF4081</item>
+    </style>
+    <style name="AppTheme.CustomTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a1a1a">
+
+    <TextView
+        android:id="@+id/txtViewPrj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="PROJECT" />
+
+    <TextView
+        android:id="@+id/txtViewCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#FFF"
+        android:layout_below="@id/txtViewPrj"
+        android:layout_centerHorizontal="true"
+        android:text="420-P24-AS" />
+
+    <TextView
+        android:id="@+id/txtViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#FFF"
+        android:layout_below="@id/txtViewCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="ANDROID PROJECT" />
+
+    <TextView
+        android:id="@+id/txtViewTeacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#FFF"
+        android:layout_below="@id/txtViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Teacher : M.Zeroug" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#FFF"
+        android:layout_below="@id/txtViewTeacher"
+        android:layout_centerHorizontal="true"
+        android:text="Winter 2018" />
+</RelativeLayout>

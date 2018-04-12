@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.midterm.lasalle.project_android.Controller.DaycareController.DaycareSchedule">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"></LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txtViewTitle"
+                android:text="menu"
+                android:textAllCaps="true"
+                style="@style/TableHead"
+            />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            style="@style/TableRow" >
+            <TextView
+                android:id="@+id/textViewEmpty"
+                android:text=""
+                style="@style/TableHead"
+            />
+
+            <TextView
+              android:id="@+id/textViewMonday"
+              android:text="Monday"
+              style="@style/TableHead"
+            />
+
+
+            <TextView
+              android:id="@+id/textViewTuesday"
+              android:text="Tuesday"
+              style="@style/TableHead"
+            />
+
+            <TextView
+              android:id="@+id/textViewWednesday"
+              android:text="Wednesday"
+              style="@style/TableHead"
+            />
+            <TextView
+                 android:id="@+id/textViewThursday"
+                 android:text="Thursday"
+                 style="@style/TableHead"
+            />
+            <TextView
+                 android:id="@+id/textViewFriday"
+                 android:text="Friday"
+                 style="@style/TableHead"
+            />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            style="@style/TableRow" >
+
+            <TextView
+                android:id="@+id/textViewBreakfast"
+                android:text="Breakfast"
+                android:layout_weight="0.5"
+                style="@style/TableHead"
+                />
+
+            <TextView
+                android:id="@+id/textViewMTBreakfast"
+                style="@style/TableData"
+                android:layout_weight="1"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textViewWBreakfast"
+                style="@style/TableData"
+                android:layout_weight="0.5"
+                android:text="" />
+            <TextView
+                android:id="@+id/textViewTHFBreakfast"
+                style="@style/TableData"
+                android:layout_weight="1"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            style="@style/TableRow">
+
+            <TextView
+                android:id="@+id/textViewLunch"
+                android:text="Lunch"
+                style="@style/TableHead"
+                />
+
+            <TextView
+                android:id="@+id/textViewMLunch"
+                style="@style/TableData"
+                android:text="" />
+            <TextView
+                android:id="@+id/textViewTLunch"
+                style="@style/TableData"
+                android:text="" />
+            <TextView
+                android:id="@+id/textViewWLunch"
+                style="@style/TableData"
+                android:text="" />
+            <TextView
+                android:id="@+id/textViewTHLunch"
+                style="@style/TableData"
+                android:text="" />
+            <TextView
+                android:id="@+id/textViewFLunch"
+                style="@style/TableData"
+                android:text="" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            style="@style/TableRow" >
+
+            <TextView
+                android:id="@+id/textViewSnack"
+                android:text="Snack"
+                android:layout_weight="0.5"
+                style="@style/TableHead"
+                />
+
+            <TextView
+                android:id="@+id/textViewMSnack"
+                style="@style/TableData"
+                android:layout_weight="0.5"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textViewTWSnack"
+                style="@style/TableData"
+                android:text="" />
+            <TextView
+                android:id="@+id/textViewTHFSnack"
+                style="@style/TableData"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"></LinearLayout>
+
+</LinearLayout>

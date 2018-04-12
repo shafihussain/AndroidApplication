@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_data"
+    tools:context="com.midterm.lasalle.project_android.Controller.MenuController.MainOptions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            style="@style/loginText"
+            android:textSize="20sp"
+            android:text="Main Menu"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_menu_black_24dp"
+            android:drawablePadding="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtViewOption"
+            style="@style/Main"
+            android:text="Please choose an option : " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnTempMetric"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            style="@style/BtnPages"
+            android:text="Temperature Metric Conversion"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnCalculation"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            style="@style/BtnPages"
+            android:text="Calculator" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnDaycareMenu"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            style="@style/BtnPages"
+            android:text="Daycare Schedule" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnGroceryList"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            style="@style/BtnPages"
+            android:text="Grocery List" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            style="@style/BtnPages"
+            android:text="Return" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+</LinearLayout>

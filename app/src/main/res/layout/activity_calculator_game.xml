@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea"
+    tools:context="com.midterm.lasalle.project_android.Controller.CalculatorController.CalculatorGame">
+
+
+    <TextView
+        android:id="@+id/txtViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculation"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="26sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/txtViewDCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:textColor="#000"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewOp1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/one"
+        app:layout_constraintTop_toBottomOf="@id/txtViewTitle"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewOperator"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/minus"
+        app:layout_constraintLeft_toRightOf="@id/imageViewOp1"
+        app:layout_constraintTop_toTopOf="@id/imageViewOp1"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewOp1"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewOp2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/two"
+        app:layout_constraintLeft_toRightOf="@id/imageViewOperator"
+        app:layout_constraintTop_toTopOf="@id/imageViewOp1"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewOp1"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewEqual"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/equal"
+        app:layout_constraintLeft_toRightOf="@id/imageViewOp2"
+        app:layout_constraintTop_toTopOf="@id/imageViewOp1"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewOp1"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/txtViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result: "
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageViewOp1"
+        app:layout_constraintStart_toStartOf="@id/imageViewOp1"
+        android:layout_marginTop="50dp"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="number"
+        app:layout_constraintLeft_toRightOf="@+id/txtViewResult"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtViewResult"
+        android:layout_marginLeft="30dp" />
+
+    <ImageView
+        android:id="@+id/imageViewState"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/check"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
+        android:layout_marginTop="30dp"
+        />
+
+    <ImageButton
+        android:id="@+id/btnStart"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/powerbutton"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/imageViewOp1"
+        android:layout_marginBottom="20dp"
+        />
+
+    <ImageButton
+        android:id="@+id/btnValidate"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/validate"
+        android:scaleType="fitXY"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnStart"
+        android:layout_marginRight="20dp" />
+
+
+</android.support.constraint.ConstraintLayout>

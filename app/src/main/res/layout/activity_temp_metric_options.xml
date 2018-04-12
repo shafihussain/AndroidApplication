@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_data"
+    tools:context="com.midterm.lasalle.project_android.Controller.TempMetricController.TempMetricOptions">
+
+
+    <TextView
+        android:id="@+id/txtView1"
+        style="@style/Main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textAllCaps="true"
+        android:textColor="#ff1111"
+        android:textSize="12.5sp"
+        android:textStyle="bold"
+        android:text="Project 01" />
+    <TextView
+        android:id="@+id/txtView2"
+        style="@style/Main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold"
+        android:layout_below="@id/txtView1"
+        android:text="Temperature Metric Conversion" />
+
+    <TextView
+        android:id="@+id/txtView3"
+        style="@style/Main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtView2"
+        android:text="Please choose conversion option : " />
+
+    <Button
+        android:id="@+id/btnTmpConvert"
+        android:layout_centerInParent="true"
+        android:text="Temperature Conversion"
+        style="@style/btnTMOptions"/>
+
+    <Button
+        android:id="@+id/btnMetricConvert"
+        android:layout_below="@id/btnTmpConvert"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Metric Conversion"
+        style="@style/btnTMOptions"/>
+    <Button
+        android:id="@+id/btnReturnMainOptions"
+        android:layout_below="@id/btnMetricConvert"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Return to Main Menu"
+        style="@style/btnTMOptions"/>
+</RelativeLayout>

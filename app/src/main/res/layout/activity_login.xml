@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.midterm.lasalle.project_android.Controller.Login"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingLeft="40dp"
+        android:paddingBottom="20dp"
+        android:background="#1a1a1a">
+
+
+        <TextView
+            style="@style/loginText"
+            android:textSize="30sp"
+            android:text="Welcome to Android Studio Development"
+            />
+
+        <TextView
+            style="@style/loginText"
+            android:textSize="15sp"
+            android:text="Developed by : Mosharrof Hussain"
+            android:layout_marginTop="20dp"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btnLearnMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Learn More"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_login"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            style="@style/loginEdit"
+            android:hint="Username"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            />
+        <EditText
+            android:id="@+id/editTextPassword"
+            style="@style/loginEdit"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_marginTop="40dp"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_login"
+            android:text="Login"
+            android:textColor="@color/tbText"
+            android:drawableRight="@drawable/ic_send_black_24dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background7"
+    tools:context="com.midterm.lasalle.project_android.Controller.MenuController.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtViewProject"
+            style="@style/Main"
+            android:text="Project" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/txtViewCourseNumber"
+            style="@style/Main"
+            android:text="420-P24-AS" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+        android:id="@+id/txtViewTitle"
+            style="@style/main"
+        android:text="Android Project"
+            android:textAllCaps="true"
+        android:textSize="12.5sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/txtViewTeacher"
+            style="@style/main"
+            android:text="Teacher : M.Zeroug" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/txtViewSemester"
+            style="@style/main"
+            android:text="Winter 2018" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:text="Start"
+            android:textAllCaps="true"
+            android:layout_marginBottom="-0dip"
+            style="@style/Buttons"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:text="Logout"
+            android:textAllCaps="true"
+            style="@style/Buttons"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

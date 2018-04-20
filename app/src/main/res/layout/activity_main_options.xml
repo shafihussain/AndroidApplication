@@ -116,7 +116,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             style="@style/BtnPages"
-            android:text="Return" />
+            android:text="Logout" />
     </LinearLayout>
 
     <LinearLayout

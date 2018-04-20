@@ -15,6 +15,7 @@ public class MetricConvert extends AppCompatActivity implements View.OnClickList
     EditText editTextMeter, editTextKm, editTextCm;
     Button btnConvert, btnReturn;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +34,7 @@ public class MetricConvert extends AppCompatActivity implements View.OnClickList
 
         btnConvert.setOnClickListener(this);
         btnReturn.setOnClickListener(this);
+
     }
 
     @Override
@@ -43,6 +45,8 @@ public class MetricConvert extends AppCompatActivity implements View.OnClickList
         switch(btnId){
 
             case R.id.btnConvert:
+                editTextKm.setText(m2km(Double.parseDouble(editTextMeter.getText().toString())) + " Kilometers ");
+                editTextCm.setText(m2Cm(Double.parseDouble(editTextMeter.getText().toString())) + " Centimeters ");
                 break;
             case R.id.btnReturn:
                 final AlertDialog.Builder builder = new AlertDialog.Builder(MetricConvert.this);
@@ -66,4 +70,14 @@ public class MetricConvert extends AppCompatActivity implements View.OnClickList
         }
 
     }
+    private Double m2km (double resultKm){
+
+        return resultKm / 1000;
+
+    }
+    private Double m2Cm (double resultCm){
+
+        return resultCm / 0.001;
+    }
+
 }

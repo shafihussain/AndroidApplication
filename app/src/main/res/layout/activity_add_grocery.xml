@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.midterm.lasalle.project_android.Controller.GroceryListController.AddGrocery">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/txtViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Element to Grocery List"
+        android:layout_marginTop="30dp"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/txtViewCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_below="@id/txtViewTitle"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:text="Grocery Item : " />
+
+    <EditText
+        android:id="@+id/editTextAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/txtViewCaption"
+        android:layout_marginLeft="120dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtViewCaption"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        style="@style/BtnPages"
+        android:text="Add Item" />
+
+</RelativeLayout>

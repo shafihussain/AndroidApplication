@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.midterm.lasalle.project_android.Controller.MenuController.MainActivity;
+import com.midterm.lasalle.project_android.Controller.MenuController.MainOptions;
 import com.midterm.lasalle.project_android.R;
 
 public class Login extends AppCompatActivity implements View.OnClickListener{
@@ -43,7 +44,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
                 if(editTextUsername.getText().toString().equals("username") &&
                     editTextPassword.getText().toString().equals("password")){
                 Toast.makeText(getApplicationContext(), " Login Successful! ",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this,MainActivity.class);
+                Intent intent = new Intent(this,MainOptions.class);
                 startActivity(intent);
                 }
                 else{

@@ -64,9 +64,9 @@ public class MainOptions extends AppCompatActivity implements View.OnClickListen
             case R.id.btnReturn:
                 //Button Exit Application
                 final AlertDialog.Builder builder = new AlertDialog.Builder(MainOptions.this);
-                builder.setTitle("Return");
-                builder.setMessage("Do you want to return to welcome page ?");
-                builder.setPositiveButton("Yes.Return Now!", new DialogInterface.OnClickListener() {
+                builder.setTitle("Logout");
+                builder.setMessage("Are you sure you want to logout ?");
+                builder.setPositiveButton("Yes.Logout Now!", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         finish();

@@ -4,69 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#161616"
     android:orientation="vertical"
     tools:context="com.midterm.lasalle.project_android.Controller.TempMetricController.Temperature.TemperatureConvert">
 
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="254dp" />
+
     <TextView
-            android:id="@+id/txtViewTitle"
-            style="@style/Main"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
-            android:textAllCaps="true"
-            android:textColor="#ff1111"
-            android:textSize="12.5sp"
-            android:textStyle="bold"
-            android:text="Temperature Conversion" />
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tempC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:text="Celsius"
+        android:textColor="#fff" />
 
-     <TextView
-         android:id="@+id/txtViewTempC"
-         android:layout_below="@id/txtViewTitle"
-         android:text="Temperature C"
-         style="@style/txtViews"
-         />
+    <TextView
+        android:id="@+id/tempC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="0.0 C"
+        android:textColor="#fff"
+        android:textSize="18dp"/>
 
-     <EditText
-         android:id="@+id/editTextTempC"
-         android:layout_below="@id/txtViewTempC"
-         android:layout_toRightOf="@id/txtViewTempC"
-         android:layout_alignBaseline="@id/txtViewTempC"
-         android:layout_marginLeft="40dp"
-         android:hint="celsius"
-         style="@style/editTxt"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tempF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Fahrenheit"
+        android:textColor="#fff" />
 
-     <TextView
-         android:id="@+id/txtViewTempF"
-         android:text="Temperature F"
-         android:layout_below="@id/txtViewTempC"
-         style="@style/txtViews"/>
+    <TextView
+        android:id="@+id/tempF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tempC"
+        android:gravity="center"
+        android:text="0.0 F"
+        android:layout_marginTop="30dp"
+        android:textColor="#fff"
+        android:textSize="18dp" />
 
-     <EditText
-         android:id="@+id/editTextTempF"
-         android:layout_below="@id/txtViewTempF"
-         android:layout_toRightOf="@id/txtViewTempF"
-         android:layout_alignBaseline="@id/txtViewTempF"
-         android:layout_marginLeft="40dp"
-         android:hint="fahrenheit"
-         style="@style/editTxt"/>
-
-     <Button
-         android:id="@+id/btnConvert"
-         android:text="Convert"
-         android:layout_below="@id/txtViewTempF"
-         android:layout_marginTop="80dp"
-         android:layout_marginLeft="30dp"
-         style="@style/btnConvert"
+    <Button
+        android:id="@+id/btnReturn"
+        android:text="Return"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        style="@style/btnConvert"
         />
-
-     <Button
-         android:id="@+id/btnReturn"
-         android:text="Return"
-         android:layout_below="@id/txtViewTempF"
-         android:layout_alignTop="@id/btnConvert"
-         android:layout_alignParentRight="true"
-         android:layout_marginRight="30dp"
-         style="@style/btnConvert"
-         />
-
-
 </RelativeLayout>

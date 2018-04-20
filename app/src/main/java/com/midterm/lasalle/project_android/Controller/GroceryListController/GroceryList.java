@@ -17,7 +17,7 @@ public class GroceryList extends AppCompatActivity{
 
     ArrayList<String> shoppingList = null;
     ArrayAdapter<String> adapter = null;
-    ListView listView;
+    ListView listView = null;
 
 
     @Override
@@ -30,11 +30,14 @@ public class GroceryList extends AppCompatActivity{
     private void Initialize() {
 
         shoppingList = new ArrayList<>();
-
+        //Different ways to adding to the array list
+        //Method 1
         Collections.addAll(shoppingList, "Eggs", "Yogurt", "Milk", "Bananas", "Apples");
+        //Method 2
         shoppingList.addAll(Arrays.asList("Cake", "Cereal", "Bread"));
-        shoppingList.add("Sunscreen");
-        shoppingList.add("Toothpaste");
+        //Method 3
+        shoppingList.add("Chicken");
+        shoppingList.add("Beef");
 
         adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, shoppingList);
         listView = findViewById(R.id.groceryListView);
